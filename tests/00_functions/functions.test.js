@@ -2,7 +2,10 @@
 const { expect } = require('chai');
 
 const {
-  max, addUnknown, evenOrOdd, operator,
+  max,
+  addUnknown,
+  evenOrOdd,
+  operator
 } = require('./functions');
 
 describe('max', () => {
@@ -31,7 +34,7 @@ describe('max', () => {
   });
 });
 
-describe('addUnknown', () => {
+describe.only('addUnknown', () => {
   it('is a function', () => {
     expect(typeof addUnknown).to.equal('function');
   });

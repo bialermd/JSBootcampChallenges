@@ -34,7 +34,7 @@ describe('max', () => {
   });
 });
 
-describe.only('addUnknown', () => {
+describe('addUnknown', () => {
   it('is a function', () => {
     expect(typeof addUnknown).to.equal('function');
   });

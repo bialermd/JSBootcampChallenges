@@ -1,11 +1,9 @@
 /* eslint-disable no-undef */
 const { expect } = require('chai');
 
-const {
-  cap, firstCharacter, doesInclude,
-} = require('./strings');
+const { cap, firstCharacter, doesInclude } = require('./strings');
 
-describe('doesInclude', () => {
+describe.only('doesInclude', () => {
   it('is a function', () => {
     expect(typeof doesInclude).to.equal('function');
   });
@@ -26,7 +24,7 @@ describe('doesInclude', () => {
   });
 });
 
-describe('firstCharacter', () => {
+describe.only('firstCharacter', () => {
   it('is a function', () => {
     expect(typeof firstCharacter).to.equal('function');
   });
@@ -53,7 +51,7 @@ describe('firstCharacter', () => {
   });
 });
 
-describe('cap', () => {
+describe.only('cap', () => {
   it('is a function', () => {
     expect(typeof cap).to.equal('function');
   });

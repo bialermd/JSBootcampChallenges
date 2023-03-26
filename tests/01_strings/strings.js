@@ -40,6 +40,7 @@ function firstCharacter(str1, str2) {
   //If either value matches, then true.  If does not match, then false
   return (
     //LowerCase method for bonus
+    // nice job solving this! This will work without the or statement. 
     strOne.toLowerCase() === strTwo.toLowerCase() || strOne === strTwo
   );
 }

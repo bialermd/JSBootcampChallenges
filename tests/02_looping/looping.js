@@ -2,6 +2,8 @@
 /* eslint-disable no-unused-vars */
 //'num' is pulling the value
 function factorial(num) {
+  // nice job solving. There is a coding principle called pure functions. What that means is that a function should not have side effects such as changing the value of a variable passed. So ideally you should make a new variable inside the function and not change the value of the parameters. 
+  // https://www.scaler.com/topics/pure-function-in-javascript/
   for (let i = num - 1; i >= 1; i--) {
     num *= i;
   }
@@ -19,6 +21,16 @@ function stringReverse(str) {
 
 // do not use built in slice method.
 function slicer(originalString, startIdx, endIdx) {
+  // if starting or ending indexes are not passed you need to assign and you can do that like this.
+
+  if (!startIdx) {
+    return originalString
+  }
+
+  if (!endIdx) {
+    endIdx = originalString.length
+  }
+
   //Create a variable with empty value.  This will equal return sum
   let sliceString = '';
   //creating the variable for i which can change in value
@@ -29,6 +41,7 @@ function slicer(originalString, startIdx, endIdx) {
   return sliceString;
 }
 
+// great!
 function addTheEvens(num) {
   //sum is variable to get evens
   let sum = 0;

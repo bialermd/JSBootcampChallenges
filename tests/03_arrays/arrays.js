@@ -71,6 +71,7 @@ function camelCase(str) {
     newArr.push(wholeWord);
   }
 
+  //new stuff
   const returnStr = newArr.join('');
   const lastInem = returnStr[returnStr.length - 1];
   if (punctuation.includes(lastInem)) {

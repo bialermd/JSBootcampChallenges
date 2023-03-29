@@ -2,15 +2,30 @@
 /* eslint-disable no-unused-vars */
 //'num' is pulling the value
 function factorial(num) {
-  for (let i = num - 1; i >= 1; i--) {
-    num *= i;
+  //Starts at 1 for equation
+  //Ends an num
+  //add 1 per loop
+  let total = 1;
+  for (let i = 1; i <= num; i++) {
+    total *= i;
   }
-  return num;
+  //total is what is returned per loop
+  return total;
+
+  // for (let i = num - 1; i >= 1; i--) {
+  //   num *= i;
+  // }
+  // return num;
 }
 
 function stringReverse(str) {
+  //place to store the string.  Let can be updated/changed
   let newString = '';
+  //str is legnth test
+  //length methood - 1 is number
+  //goes from end to beginning
   for (let i = str.length - 1; i >= 0; i--) {
+    //newstring is index and displayed backwards
     newString += str[i];
     //console.log(newString);
   }
@@ -19,6 +34,14 @@ function stringReverse(str) {
 
 // do not use built in slice method.
 function slicer(originalString, startIdx, endIdx) {
+  if (startIdx === undefined) {
+    return originalString;
+  }
+
+  if (endIdx === undefined) {
+    endIdx = originalString.length;
+  }
+
   //Create a variable with empty value.  This will equal return sum
   let sliceString = '';
   //creating the variable for i which can change in value

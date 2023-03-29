@@ -8,7 +8,7 @@ const {
   addTheEvens
 } = require('./looping');
 
-describe.only('factorial', () => {
+describe('factorial', () => {
   it('is a function', () => {
     expect(typeof factorial).to.equal('function');
   });
@@ -26,7 +26,7 @@ describe.only('factorial', () => {
   });
 });
 
-describe.only('stringReverse', () => {
+describe('stringReverse', () => {
   it('is a function', () => {
     expect(typeof stringReverse).to.equal('function');
   });
@@ -47,7 +47,7 @@ describe.only('stringReverse', () => {
   });
 });
 
-describe.only('slicer', () => {
+describe('slicer', () => {
   it('is a function', () => {
     expect(typeof slicer).to.equal('function');
   });
@@ -77,7 +77,7 @@ describe.only('slicer', () => {
   });
 });
 
-describe.only('addTheEvens', () => {
+describe('addTheEvens', () => {
   it('is a function', () => {
     expect(typeof addTheEvens).to.equal('function');
   });

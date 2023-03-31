@@ -3,9 +3,7 @@
 /* eslint-disable no-undef */
 const { expect } = require('chai');
 
-const {
-  greet, calc,
-} = require('./objectMethods');
+const { greet, calc } = require('./objectMethods');
 
 describe('greet', () => {
   it('is an object', () => {

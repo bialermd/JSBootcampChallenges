@@ -29,6 +29,7 @@ describe('multiply', () => {
     expect(returnedValue).to.equal(13440);
   });
 });
+
 describe('includesCopy', () => {
   it('is a function', () => {
     expect(typeof includesCopy).to.equal('function');
@@ -56,7 +57,7 @@ describe('includesCopy', () => {
   });
 });
 
-describe.only('camelCase', () => {
+describe('camelCase', () => {
   it('is a function', () => {
     expect(typeof camelCase).to.equal('function');
   });
